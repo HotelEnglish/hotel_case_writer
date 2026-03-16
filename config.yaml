@@ -1,0 +1,79 @@
+# ============================================================
+# 酒店案例批量改写工具 - 主配置文件
+# ============================================================
+
+# --- 路径配置 ---
+paths:
+  input_dir: "./input"          # 放置待处理 .xlsx 文件的目录
+  output_dir: "./output"        # 生成的 .md 文件保存目录
+  log_file: "./logs/run.log"    # 运行日志
+  error_log: "./logs/error_log.txt"  # 错误日志
+  progress_db: "./logs/progress.db"  # 断点续传记录（SQLite）
+  style_ref_file: ""            # 范文路径（可选，留空则不使用风格参考）
+
+# --- Excel 读取配置 ---
+excel:
+  resolution_notes_column: "Resolution Notes"   # 事件记录列名
+  skip_sheets: []                                 # 需要跳过的 sheet 名称列表
+  min_content_length: 20                          # 最短有效内容字符数（低于此值视为无效，跳过）
+  invalid_values:                                 # 需要跳过的固定无效值（大小写不敏感）
+    - "无"
+    - "n/a"
+    - "nil"
+    - "none"
+    - "-"
+    - "/"
+    - "na"
+  output_subdir_by_file: true   # true=每个xlsx生成独立子文件夹；false=所有md放在同一目录
+
+# --- LLM 推理配置 ---
+llm:
+  temperature: 0.75             # 温度（0.0-1.0，越高越有创造性）
+  max_tokens: 4096              # 最大生成Token数
+  request_timeout: 120          # 单次请求超时（秒）
+  max_retries: 3                # 最大重试次数
+  retry_base_delay: 5           # 重试基础等待时间（秒，指数退避）
+  requests_per_minute: 20       # 速率限制（每分钟最大请求数，防429）
+  concurrent_workers: 1         # 并发数（Ollama本地可适当提高，云端API建议1-3）
+
+# --- 字数控制 ---
+word_count:
+  target: 2000                  # 目标字数（汉字）
+  min: 1200                     # 触发扩写重试的最低字数（低于此值才重试）
+  max: 2200                     # 最大可接受字数
+  retry_if_short: true          # 字数不足时是否自动重试
+  max_word_count_retries: 2     # 字数不足最大重试次数
+
+# --- 脱敏配置 ---
+desensitization:
+  enabled: true                 # 是否开启自动脱敏
+  replace_chinese_names: true   # 替换中文姓名（如"张先生"→"[张先生]"）
+  replace_phone: true           # 替换手机号
+  replace_id_card: true         # 替换身份证号
+  replace_room_number: false    # 是否替换房间号（默认保留，有助于案例真实感）
+  custom_patterns: []           # 自定义正则脱敏规则（高级用法）
+
+# --- 输出配置 ---
+output:
+  encoding: "utf-8"             # 文件编码
+  add_metadata_header: true     # 是否在md文件顶部添加元数据注释（来源文件、行号等）
+  filename_max_length: 60       # 文件名最大长度（汉字+英文混合，按字符计）
+  conflict_suffix: true         # 文件名冲突时自动追加序号后缀
+
+# --- Prompt 模板配置（可在此覆盖 prompts/ 目录下的模板）---
+prompt:
+  template_file: "./prompts/system_prompt.md"   # System Prompt 模板文件路径
+  use_style_ref: true                            # 是否将范文内容注入Prompt
+  style_ref_max_chars: 3000                      # 范文最多注入字符数（控制Token消耗）
+
+# --- 成本估算 ---
+cost:
+  show_estimate_before_run: true   # 运行前显示预估成本
+  input_price_per_1k_tokens: 0.001  # 输入价格（美元/千Token，按实际模型填写）
+  output_price_per_1k_tokens: 0.003 # 输出价格（美元/千Token）
+  usd_to_cny_rate: 7.2              # 汇率
+
+# --- Streamlit UI 配置 ---
+ui:
+  page_title: "酒店案例批量改写工具"
+  theme: "light"

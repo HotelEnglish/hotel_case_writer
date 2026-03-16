@@ -1,0 +1,236 @@
+{
+  "qwen": {
+    "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3.5-flash"
+  },
+  "custom": {
+    "api_key": "sk-KJ5TN6fbMPmp7Y7LQu9OBvdlTMALpWHWGLdNHWvaJLbOTy5X",
+    "base_url": "https://open.cherryin.ai/v1",
+    "model": "agent/deepseek-v3.2(free)"
+  },
+  "zhipu": {
+    "api_key": "4fae36af8d062db22f14c2b7e2cdc593.Ygw5cO8F67J3NEBb",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "model": "GLM-4.7-Flash"
+  },
+  "_pool_models": [
+    {
+      "label": "千问-plecs",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3-vl-plus-2025-12-19"
+    },
+    {
+      "label": "千问-plecs-glm-4.7",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "glm-4.7"
+    },
+    {
+      "label": "千问-plecs-MiniMax",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "MiniMax-M2.1"
+    },
+    {
+      "label": "千问-plecs-qwen3-vl",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3-vl-flash-2026-01-22"
+    },
+    {
+      "label": "千问-plecs-qwen3-max",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3-max-2026-01-23"
+    },
+    {
+      "label": "千问-plecs-kimi-k2.5",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "kimi-k2.5"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-397b-a17b",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-397b-a17b"
+    },
+    {
+      "label": "千问-plecs-glm-5",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "glm-5"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-plus-2026-02-15",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-plus-2026-02-15"
+    },
+    {
+      "label": "千问-plecs-qwen3.5",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-plus"
+    },
+    {
+      "label": "千问-plecs-MiniMax-M2.5",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "MiniMax-M2.5"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-flash-2026-02-23",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-flash-2026-02-23"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-27b",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-27b"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-35b-a3b",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-35b-a3b"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-flash",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-flash"
+    },
+    {
+      "label": "千问-plecs-qwen3.5-122b-a10b",
+      "provider": "qwen",
+      "api_key": "sk-329072617c7949289183d38f8f35760f",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-122b-a10b"
+    },
+    {
+      "label": "千问-soho-qwen3.5-122b-a10b",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-122b-a10b"
+    },
+    {
+      "label": "千问-soho-qwen3.5-flash",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-flash"
+    },
+    {
+      "label": "千问-soho-qwen3.5-35b-a3b",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-35b-a3b"
+    },
+    {
+      "label": "千问-soho-qwen3.5-plus",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-plus"
+    },
+    {
+      "label": "千问-soho-qwen3.5-plus-2026-02-15",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-plus-2026-02-15"
+    },
+    {
+      "label": "千问-soho-glm-5",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "glm-5"
+    },
+    {
+      "label": "千问-soho-qwen3-max-2026-01-23",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3-max-2026-01-23"
+    },
+    {
+      "label": "千问-soho-qwen3.5-27b",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-27b"
+    },
+    {
+      "label": "千问-soho-qwen3-vl-flash-2026-01-22",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3-vl-flash-2026-01-22"
+    },
+    {
+      "label": "千问-soho-kimi-k2.5",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "kimi-k2.5"
+    },
+    {
+      "label": "千问-soho-qwen3.5-flash-2026-02-23",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-flash-2026-02-23"
+    },
+    {
+      "label": "千问-soho-qwen3.5-397b-a17b",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.5-397b-a17b"
+    },
+    {
+      "label": "千问-soho-MiniMax-M2.5",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "MiniMax-M2.5"
+    },
+    {
+      "label": "千问-soho-qwen-flash-character-2026-02-26",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-flash-character-2026-02-26"
+    },
+    {
+      "label": "千问-soho-qwen-flash-character",
+      "provider": "qwen",
+      "api_key": "sk-9413d27d803749d9af3ac32eb9c43426",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen-flash-character"
+    }
+  ]
+}
